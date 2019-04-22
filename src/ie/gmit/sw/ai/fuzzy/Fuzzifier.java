@@ -229,9 +229,6 @@ public void fightNn(double health, double angerLevel, double weapon) {
 		}
 		
 		try {
-//			while(checkToRetrain) {
-				//outcome = nnfight.action(health, weapon, angerLevel);
-//				checkToRetrain =false;
 				if(outcome == 1) {
 					System.out.println("panic");
 					move();
@@ -241,10 +238,7 @@ public void fightNn(double health, double angerLevel, double weapon) {
 					followPlayer();  
 				}
 				else if (outcome == 3)
-					System.out.println("hide");
-				
-//			}
-			
+					System.out.println("hide");			
 		} catch (Exception e) {
 		}
 	}
